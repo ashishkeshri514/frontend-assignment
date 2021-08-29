@@ -1,0 +1,7 @@
+{
+    "users":[
+        {"id":1,"name": "Ashish","email":"ashish.keshri.514@gmail.com","gender":"male","dob":"03-07-1998","city":"Ghaziabad","country":"India"},
+        {"id":2,"name": "Aditya","email":"aditya.keshri.514@gmail.com","gender":"male","dob":"07-07-1998","city":"Ghaziabad","country":"India"}
+
+    ]
+}

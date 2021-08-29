@@ -49,3 +49,7 @@
   margin: 4px 2px;
   cursor: pointer;
 }
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
