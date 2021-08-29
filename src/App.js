@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useEffect,useState} from 'react';
+import React, {useState} from 'react';
 import { AgGridReact} from 'ag-grid-react';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
@@ -68,59 +68,59 @@ function App() {
     return eGui;
   }
 
-  function date() {
-    let eGui = document.createElement("div");
-    eGui.innerHTML = `
-    <input type="date" >  </button>
-    `;
-    return eGui;
-  }
+  // function date() {
+  //   let eGui = document.createElement("div");
+  //   eGui.innerHTML = `
+  //   <input type="date" >  </button>
+  //   `;
+  //   return eGui;
+  // }
 
-  function gender() {
-    let data = {"Male":"male","Female":"female"};
-    let dropdown = document.createElement("select");
+  // function gender() {
+  //   let data = {"Male":"male","Female":"female"};
+  //   let dropdown = document.createElement("select");
 
-    dropdown.length = 0;
-    dropdown.classList.add("custom-select");
+  //   dropdown.length = 0;
+  //   dropdown.classList.add("custom-select");
 
-    let defaultOption = document.createElement('option');
-    defaultOption.text = "Select Gender";
-    dropdown.add(defaultOption);
-    dropdown.selectedIndex = 0;
-    let option;
+  //   let defaultOption = document.createElement('option');
+  //   defaultOption.text = "Select Gender";
+  //   dropdown.add(defaultOption);
+  //   dropdown.selectedIndex = 0;
+  //   let option;
     
-    for (const [key, value] of Object.entries(data)) {
-      option = document.createElement('option');
-      option.text = key;
-      option.value = key;
-      dropdown.add(option);
-    }
+  //   for (const [key, value] of Object.entries(data)) {
+  //     option = document.createElement('option');
+  //     option.text = key;
+  //     option.value = key;
+  //     dropdown.add(option);
+  //   }
     
-    return dropdown;
-  }
+  //   return dropdown;
+  // }
 
-  function country() {
-    console.log(data);
-    let dropdown = document.createElement("select");
+  // function country() {
+  //   console.log(data);
+  //   let dropdown = document.createElement("select");
 
-    dropdown.length = 0;
-    dropdown.classList.add("custom-select");
+  //   dropdown.length = 0;
+  //   dropdown.classList.add("custom-select");
 
-    let defaultOption = document.createElement('option');
-    defaultOption.text = "Select Country";
-    dropdown.add(defaultOption);
-    dropdown.selectedIndex = 0;
-    let option;
+  //   let defaultOption = document.createElement('option');
+  //   defaultOption.text = "Select Country";
+  //   dropdown.add(defaultOption);
+  //   dropdown.selectedIndex = 0;
+  //   let option;
     
-    for (const [key, value] of Object.entries(data)) {
-      option = document.createElement('option');
-      option.text = key;
-      option.value = key;
-      dropdown.add(option);
-    }
+  //   for (const [key, value] of Object.entries(data)) {
+  //     option = document.createElement('option');
+  //     option.text = key;
+  //     option.value = key;
+  //     dropdown.add(option);
+  //   }
     
-    return dropdown;
-  }
+  //   return dropdown;
+  // }
   
 
   function onCellClicked(params) {
