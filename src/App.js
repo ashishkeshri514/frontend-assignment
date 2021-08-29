@@ -158,8 +158,13 @@ function App() {
   }
 
   const onSubmit = () => {  
+    try{
     setTableData([...tableData,...addtableData]);
     setAddTableData(null);
+    }
+    catch(err){
+      alert("No Data to add")
+    }
   }
 
   // useEffect(()=>{
