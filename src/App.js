@@ -156,8 +156,19 @@ function App() {
     console.log(nonselectedData);
     //To Implement
   }
-
+  const validate = () => {
+    for(let i in addtableData) {
+    for (const [key, value] of Object.entries(addtableData[i])) {
+      if(!value) {
+        alert("Please Fill the "+ key);
+        return false;
+      }
+    }
+    }
+    return true;
+  }
   const onSubmit = () => {  
+    if(validate())
     try{
     setTableData([...tableData,...addtableData]);
     setAddTableData(null);
