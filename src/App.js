@@ -63,8 +63,9 @@ function App() {
   function actionCellRenderer(params) {
     let eGui = document.createElement("div");
     eGui.innerHTML = `
-    <button class="action-button delete" data-action="delete" > Delete </button>
+    <button class="action-button delete" onClick={onCellClicked()} data-action="delete" > Delete </button>
     `;
+    
     return eGui;
   }
 
@@ -123,19 +124,13 @@ function App() {
   // }
   
 
-  function onCellClicked(params) {
-    // Handle click event for action cells
-    if (params.column.colId === "action" && params.event.target.dataset.action) {
-      let action = params.event.target.dataset.action;
+  // function onCellClicked() {
+  //   const selectedRows = gridApi.getSelectedRows();
+  //   setAddTableData(gridApi.applyTransaction({ remove: selectedRows }));
+  //   return true;
 
-      if (action === "delete") {
-        params.api.applyTransaction({
-          remove: [params.node.data]
-        });
-      }
-    }
-    return true;
-  }
+  //   }
+  
 
   const onAdd = () => {
     try{
