@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import { AgGridReact} from 'ag-grid-react';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
-import data from './components/utils/country.json';
+// import data from './components/utils/country.json';
 import user from './components/utils/db.json';
 
 function App() {
